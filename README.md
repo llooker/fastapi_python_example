@@ -43,11 +43,9 @@ npm install
 <br/>
 
 ## Step 7) Run it!
-I didn't link them up into a single command, so you might need to open two shells
+It's linked up into a single command, this starts the front and backend servers:
 ```
 python main.py
-cd frontend
-npm start
 ```
 
 Now you should be redirected to https://embed.demo.com:3000 where you should see an embeded dashboard

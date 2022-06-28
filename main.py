@@ -2,6 +2,7 @@ from typing import Union
 from fastapi import FastAPI, Request
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
+import subprocess
 app = FastAPI()
 from auth import generateUrlLocally, urlFromLookerAPI
 
@@ -29,7 +30,9 @@ def auth_from_api(request: Request,src:str=""):
     userToken = request.headers.get('usertoken')
     return urlFromLookerAPI(src, userToken)
 
+
 if __name__ == '__main__':
+    subprocess.Popen("cd frontend; npm start", shell=True)
     uvicorn.run(
         'main:app', port=8000, host='0.0.0.0',
         reload=True,
