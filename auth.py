@@ -7,9 +7,7 @@ import os
 from hashlib import sha1
 import six
 import six.moves.urllib as urllib
-
 import hmac
-
 import configparser
 import looker_sdk
 
@@ -68,7 +66,6 @@ user_data = {
         ,'external_group_id':None
     }
 }
-
 
 
 class Looker:
