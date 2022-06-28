@@ -28,21 +28,15 @@ rename it to config.ini and put in your real values
 <br/>
 <br/>
 
-## Step 5) put in the correct host at 
-`frontend/src/components/dashboard.js` line 14. this app does not put in the config.ini values onto the frontend
-<br/>
-<br/>
-
-## Step 6) install the dependencies
+## Step 5) install the dependencies
 (highly reccomended to use a virtual environment)
 ```
 pip install -r requirements.txt
-cd frontend
-npm install
+
 ```
 <br/>
 
-## Step 7) Run it!
+## Step 6) Run it!
 It's linked up into a single command, this starts the front and backend servers:
 ```
 python main.py
@@ -53,7 +47,7 @@ with an event that triggered a simple 'Successfully Loaded!' message
 
 <br/>
 
-## Step 8) Vary the user and URL generation methods
+## Step 7) Vary the user and URL generation methods
 User:
 Since in your real application, the URL will need to be sensitive to the logged in user
 this demonstrates how the frontend's request will change what the user sees via the userToken
