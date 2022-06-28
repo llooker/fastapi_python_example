@@ -41,7 +41,7 @@ It's linked up into a single command, this starts the front and backend servers:
 ```
 python main.py
 ```
-
+This will install the node modules if they don't exist already and will boot the front and backend servers
 Now you should be redirected to https://embed.demo.com:3000 where you should see an embeded dashboard
 with an event that triggered a simple 'Successfully Loaded!' message
 
