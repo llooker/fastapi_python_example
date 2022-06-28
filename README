@@ -21,6 +21,7 @@ Step 5) put in the correct host at
 frontend/src/components/dashboard.js line 14. this app does not put in the config.ini values onto the frontend
 
 Step 5) install the dependencies
+(highly reccomended to use a virtual environment)
 pip install -r requirements.txt
 cd frontend
 npm install
