@@ -1,0 +1,7 @@
+[api]
+base_url=https://yourlooker.cloud.looker.com/
+client_id=XXX
+client_secret=XXX
+[embed]
+SECRET=XXX
+EMBED_HOST=yourlooker.cloud.looker.com
