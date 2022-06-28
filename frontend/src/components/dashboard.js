@@ -11,11 +11,14 @@ const Embed = () => {
       no call to the auth service is made at this step
     */  
     LookerEmbedSDK.init(
-        'yourlooker.cloud.looker.com', 
+        // 'yourlooker.cloud.looker.com', 
+        process.env.LOOKER, 
       { 
         //The location of the service which will privately create a signed URL
-        url: 'https://embed.demo.com:8000/auth' 
-        // url: 'https://embed.demo.com:8000/auth2' 
+        // 
+        url: `https://${process.env.HOST}:${process.env.BACKENDPORT}/auth` 
+        // url: `https://${process.env.HOST}:${process.env.BACKENDPORT}/auth2` 
+
        ,headers: [
            //include some factor which your auth service can use to uniquely identify a user, so that a user specific url can be returned. This could be a token or ID
            { name: 'usertoken', value: 'user_1' }
